@@ -1,0 +1,348 @@
+body {
+    background: linear-gradient(to top, rgb(231, 230, 230), grey);
+    margin-top: 0px;
+    font-family: "Righteous", sans-serif;
+}
+
+.header_sitio {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.84), rgba(70, 69, 69, 0.5)), url(../imagenes/fondo.png);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    font-size: 120%;
+}
+
+.header_content {
+    color: #fff;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem 1rem;
+}
+
+.text_header {
+    color: #f4f2f2;
+    max-width: 90%;
+    margin: 2.75rem;
+}
+
+.header_up {
+    margin-right: 50%;
+    background: rgba(45, 49, 53, 0.9);
+    color: #fff;
+    font-size: 1.0rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    box-shadow: 4px 4px 4px black;
+}
+
+.title_header {
+    color: #f9f6f6;
+    margin: 2.75rem 0 2.75rem;
+    padding-top: 10%;
+}
+
+.header_footer {
+    width: 100%;
+}
+
+.menu_principal {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+}
+
+.menu_principal a {
+    padding: 2rem;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c8c8c8;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.menu_principal a:hover {
+    background: linear-gradient(to top, grey, gold);
+    color: black;
+}
+
+
+@media (max-width: 600px) {
+    .header_content {
+        padding: 0.5rem;
+        min-height: auto;
+    }
+
+    .text_header {
+        font-size: 1rem;
+        max-width: 95%;
+        margin-top: 0.5rem;
+    }
+
+    .title_header {
+        font-size: 0.95rem;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+        padding: 0.4rem;
+    }
+}
+
+.separador {
+    margin-top: -30px;
+    width: 100%;
+    text-align: left;
+    background: linear-gradient(to right, black, grey);
+    color: white;
+}
+
+.contenedor_productos {
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
+    gap: 40px;
+    justify-content: center;
+}
+
+.tag {
+    top: 0px;
+    left: 10px;
+    margin: 2px;
+    background-color: #d70606;
+    color: white;
+    border-radius: 8px;
+    height: 20px;
+    width: 100px;
+    z-index: 10;
+}
+
+.card {
+    background: linear-gradient(to top, grey, white);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 15rem;
+    position: relative;
+    cursor: default;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(69, 63, 63);
+    transition: all 0.5s ease-out;
+}
+
+.reseñas {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 20rem));
+    justify-content: center;
+    padding: 5rem;
+}
+
+@keyframes slidein {
+    from {
+        transform: translatex(2em);
+        opacity: 1;
+        color: rgb(71, 7, 7);
+    }
+
+    to {
+        transform: translatex(0%);
+        opacity: 0.2;
+        color: black;
+    }
+}
+
+.fa-mug-saucer {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.card:hover {
+    transform: rotate(1deg);
+    background: linear-gradient(to top, grey, gold);
+    box-shadow: 25px 25px 5px rgb(69, 63, 63);
+}
+
+.imagen {
+    width: 100%;
+    max-height: 228px;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.btn_comprar {
+    border-radius: 20px;
+    height: 50px;
+    width: 50px;
+    color: rgb(250, 247, 247);
+    background-color: rgba(0, 0, 0, 0.748);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.btn_reseña {
+    border-radius: 20px;
+    color: rgb(250, 247, 247);
+    background-color: rgba(0, 0, 0, 0.748);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    padding: 20px;
+    list-style: none;
+    gap: 60px;
+}
+
+.form_msj {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.84), rgba(70, 69, 69, 0.5)), url(../imagenes/cafebar.png);
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: xx-large;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.form_msj span {
+    color: #c8c8c8;
+    font-family: "Righteous", sans-serif;
+    text-shadow: #070704 3px -3px 6px;
+
+}
+
+form {
+    font-size: 1rem;
+    text-align: center;
+    background: linear-gradient(20deg, rgb(144, 138, 138) 1%, grey 70%, white);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: auto;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.585);
+
+}
+
+.form_input {
+    padding: 10px 12px;
+    border: 1px solid #481a1a;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+    color: #111;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.btn_form {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding-inline: 10%;
+    font-size: 1rem;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.585);
+
+}
+
+@media (max-width: 900px) {
+    .form_msj {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        font-size: large;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .form_msj span {
+        font-size: 1.2rem;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    form {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    justify-content: space-between;
+    color: rgb(249, 248, 248);
+    background: linear-gradient(to right, rgb(5, 5, 5) 0, rgb(98, 98, 98) 100%);
+}
+
+.fa-star {
+    color: goldenrod;
+}
+
+.back-to-top {
+    border: 1px solid;
+    padding: 5px 10px;
+    z-index: 1000;
+    font-size: 15px;
+    border-radius: 2rem;
+    color: #000;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+}
+
+.back-to-top:hover {
+    background: linear-gradient(to top, grey, gold);
+    color: black;
+}
+
+.menu_filtros {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.menu_filtros a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+
+    transition: 0.3s;
+}
+
+.menu_filtros a:hover {
+    background: linear-gradient(to top, grey, gold);
+    color: black;
+}
