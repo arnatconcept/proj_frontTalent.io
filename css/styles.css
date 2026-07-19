@@ -5,9 +5,7 @@
 
 
 
-/* =====================================================
-   CONTENEDOR GENERAL DE PRODUCTOS
-===================================================== */
+/* CONTENEDOR GENERAL DE PRODUCTOS */
 
 .contenedor_productos {
     width: 100%;
@@ -15,10 +13,7 @@
     box-sizing: border-box;
 }
 
-/*
-JavaScript agrega las tarjetas dentro de este elemento.
-Por eso este debe ser el verdadero contenedor Flexbox.
-*/
+
 #contenedor_productos {
     width: 100%;
     display: flex;
@@ -29,9 +24,7 @@ Por eso este debe ser el verdadero contenedor Flexbox.
     gap: 2rem;
 }
 
-/* =====================================================
-   TARJETAS DE PRODUCTOS
-===================================================== */
+/* TARJETAS DE PRODUCTOS */
 
 .producto-card {
     flex: 0 1 260px;
@@ -56,7 +49,6 @@ Por eso este debe ser el verdadero contenedor Flexbox.
         background 0.3s ease;
 }
 
-/* Imagen creada dinámicamente desde JavaScript */
 .producto-card img {
     display: block;
     width: 100%;
@@ -71,21 +63,18 @@ Por eso este debe ser el verdadero contenedor Flexbox.
     background-color: #e4e4e4;
 }
 
-/* Nombre del producto */
 .producto-card h3 {
     margin: 0.5rem 0;
     font-size: 1.25rem;
     color: #1b1b1b;
 }
 
-/* Categoría */
 .producto-categoria {
     margin: 0.4rem 0;
     color: #444;
     font-size: 0.9rem;
 }
 
-/* Precio */
 .producto-precio {
     margin: 0.7rem 0 1rem;
     font-size: 1.15rem;
@@ -93,10 +82,7 @@ Por eso este debe ser el verdadero contenedor Flexbox.
     color: #171717;
 }
 
-/*
-Empuja el botón hacia el final.
-Así todas las tarjetas quedan visualmente alineadas.
-*/
+
 .producto-card .agregar-carrito {
     width: 100%;
     margin-top: auto;
@@ -129,16 +115,13 @@ Así todas las tarjetas quedan visualmente alineadas.
     opacity: 0.75;
 }
 
-/* Efecto exclusivo para productos */
 .producto-card:hover {
     transform: translateY(-6px);
     background: linear-gradient(to top, grey, gold);
     box-shadow: 12px 14px 15px rgba(69, 63, 63, 0.75);
 }
 
-/* =====================================================
-   MENSAJES DE CARGA Y ERROR
-===================================================== */
+/* MENSAJES DE CARGA Y ERROR */
 
 .mensaje-api {
     width: 100%;
@@ -151,9 +134,7 @@ Así todas las tarjetas quedan visualmente alineadas.
     color: #8b0000;
 }
 
-/* =====================================================
-   DISEÑO RESPONSIVE
-===================================================== */
+/* DISEÑO RESPONSIVE */
 
 @media (max-width: 900px) {
     #contenedor_productos {
@@ -905,7 +886,6 @@ body.carrito-abierto .carrito-drawer {
     background-color: var(--error);
 }
 
-/* Accesibilidad: foco visible para navegacion por teclado */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
